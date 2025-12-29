@@ -1,21 +1,21 @@
-# Dotfiles Installation Guide for Sway on Arch Linux
+dotfiles install for sway arch
 
-This guide will help you install and set up these dotfiles after installing base Sway on Arch Linux.
+this guide is for installing Buage Dots without the pain of 5000 errors. 
 
 ## Prerequisites
-- Arch Linux installed with base Sway setup
-- Basic Sway installation: `pacman -S sway wayland xorg-server-xwayland`
-- Internet connection
+- arch linux 
+- sway installed: `pacman -S sway wayland xorg-server-xwayland`
+- good internet so mirrors dont fuck it up 
 
 ## Installation Steps
 
-1. **Clone the dotfiles repository**
+1. **clone the dottys**
    ```
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME ~/.dotfiles
+   git clone https://github.com/arzolinux/sway-dots.git
    cd ~/.dotfiles
    ```
 
-2. **Make the install script executable**
+2. **make the install script like an exe**
    ```
    chmod +x install.sh
    ```
@@ -25,30 +25,23 @@ This guide will help you install and set up these dotfiles after installing base
    ./install.sh
    ```
    The script will:
-   - Ask for your sudo password
-   - Install required packages (waybar, starship, tmux, neovim, etc.)
-   - Create symlinks for configuration files
-   - Copy wallpapers to ~/Pictures/
-   - Install tmux plugins via TPM
+   - ask u for ur password because it can
+   - install everything needed
+   - create symlinks
+   - copy wallpapers to pictures folder
+   - install tmux pluggys
 
 4. **Apply the changes**
-   - Logout from your current session
-   - Login again to Sway
-   - Alternatively, from a TTY: `swaymsg exit` then `sway` (but this may require running the script before starting Sway)
-
-## What's included
-- **Waybar**: Status bar configuration with workspaces, audio, battery, etc.
-- **Starship**: Shell prompt customization
-- **Tmux**: Terminal multiplexer with plugins (catppuccin theme, vim navigation, yank, etc.)
-- **Neovim**: Text editor (configuration directory ready for your setup)
-- **Wallpapers**: Background images
+   - logout
+   - login again
+   - shutdown/restart whole pc
 
 ## Customization
-- Edit the configuration files in the repository
+- edit the config in the files on ur fucking pc if u dont know how to get here u dont deserve using these dots
 - The symlinks will automatically reflect changes
-- For tmux plugins, add/remove from tmux.conf and run `~/.tmux/plugins/tpm/bin/install_plugins`
+- for timmy tuff knuckles tmux plugins, add/remove from tmux.conf and run `~/.tmux/plugins/tpm/bin/install_plugins`
 
 ## Troubleshooting
-- If packages fail to install, ensure your Arch system is up to date: `pacman -Syu`
-- Check that all dependencies are installed
-- For Sway-specific issues, refer to the Sway documentation
+- run `pacman -Syu` make sure everythings up to date
+- check that everything installed
+- refer to sway documentation for sway issues
