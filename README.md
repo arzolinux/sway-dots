@@ -15,7 +15,7 @@ See [INSTALL_GUIDE.txt](INSTALL_GUIDE.txt) for detailed installation instruction
 
 Quick install:
 ```bash
-git clone https://github.com/arzolinux/sway-dots/ ~/.dotfiles
+git clone https://github.com/arzolinux/sway-dots.git ~/.dotfiles
 cd ~/.dotfiles
 chmod +x install.sh
 ./install.sh
