@@ -1,14 +1,14 @@
 # Sway Dotfiles
 
-My personal dotfiles for Sway window manager on Arch Linux.
+My installation script for [Buage Dots](https://github.com/Buage/dotfiles-1)
 
 ## Features
-- **Sway**: Tiling window manager configuration
-- **Waybar**: Status bar with workspaces, audio controls, battery, etc.
-- **Starship**: Beautiful shell prompt
-- **Tmux**: Terminal multiplexer with Catppuccin theme and useful plugins
-- **Neovim**: Text editor setup
-- **Wallpapers**: Collection of wallpapers
+- **Sway**: windows tiler
+- **Waybar**: top bar
+- **Starship**: cool shell
+- **Tmux**: terminal with cappuchin theme
+- **Neovim**: text editor
+- **Wallpapers**: wallpapers (no shit)
 
 ## Installation
 See [INSTALL_GUIDE.txt](INSTALL_GUIDE.txt) for detailed installation instructions.
@@ -21,9 +21,6 @@ chmod +x install.sh
 ./install.sh
 ```
 
-## Screenshots
-<!-- Add screenshots here -->
-
 ## Dependencies
 - Sway
 - Waybar
@@ -31,6 +28,6 @@ chmod +x install.sh
 - Tmux
 - Neovim
 - Various system utilities (alsa-utils, pulseaudio, etc.)
-
-## License
-<!-- Add license if applicable -->
+ 
+## About
+I didn't make these dotfiles credits to Buage and JaKooLit, I just made an automated install script which installs all the packages and the dotfiles. 
