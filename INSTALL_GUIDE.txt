@@ -1,0 +1,54 @@
+# Dotfiles Installation Guide for Sway on Arch Linux
+
+This guide will help you install and set up these dotfiles after installing base Sway on Arch Linux.
+
+## Prerequisites
+- Arch Linux installed with base Sway setup
+- Basic Sway installation: `pacman -S sway wayland xorg-server-xwayland`
+- Internet connection
+
+## Installation Steps
+
+1. **Clone the dotfiles repository**
+   ```
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME ~/.dotfiles
+   cd ~/.dotfiles
+   ```
+
+2. **Make the install script executable**
+   ```
+   chmod +x install.sh
+   ```
+
+3. **Run the installation script**
+   ```
+   ./install.sh
+   ```
+   The script will:
+   - Ask for your sudo password
+   - Install required packages (waybar, starship, tmux, neovim, etc.)
+   - Create symlinks for configuration files
+   - Copy wallpapers to ~/Pictures/
+   - Install tmux plugins via TPM
+
+4. **Apply the changes**
+   - Logout from your current session
+   - Login again to Sway
+   - Alternatively, from a TTY: `swaymsg exit` then `sway` (but this may require running the script before starting Sway)
+
+## What's included
+- **Waybar**: Status bar configuration with workspaces, audio, battery, etc.
+- **Starship**: Shell prompt customization
+- **Tmux**: Terminal multiplexer with plugins (catppuccin theme, vim navigation, yank, etc.)
+- **Neovim**: Text editor (configuration directory ready for your setup)
+- **Wallpapers**: Background images
+
+## Customization
+- Edit the configuration files in the repository
+- The symlinks will automatically reflect changes
+- For tmux plugins, add/remove from tmux.conf and run `~/.tmux/plugins/tpm/bin/install_plugins`
+
+## Troubleshooting
+- If packages fail to install, ensure your Arch system is up to date: `pacman -Syu`
+- Check that all dependencies are installed
+- For Sway-specific issues, refer to the Sway documentation
